@@ -344,19 +344,19 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame</h3>
         <div class="contenedor-form">
-            <form action="">
+            <form action="" name="contactForm">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de email" class="input-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="nombreCompleto">
+                    <input type="email" placeholder="Direccion de email" class="input-mitad" name="email">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema.." class="input-full">
+                    <input type="text" placeholder="Tema.." class="input-full" name="asunto">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje.."
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje.."
                         class="input-full"></textarea>
                 </div>
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar" name="btnSubmit" onclick="validarFormulario()">
             </form>
         </div>
     </section>
