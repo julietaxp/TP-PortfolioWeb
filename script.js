@@ -49,3 +49,33 @@ window.onscroll = function () {
     efectoHabilidades()
 };
 
+//Validacion formulario "CONTACTAME"
+
+function validarFormulario() {
+    if (document.contactForm.nombreCompleto.value.length == 0) {
+        alert("Ingrese su nombre y apellido para poder continuar.")
+        document.contactForm.nombreCompleto.focus()
+        return 0;
+    }
+
+    if (document.contactForm.email.value.length == 0) {
+        alert("Ingrese su dirección de email.")
+        document.contactForm.email.focus()
+        return 0;
+    }
+
+    if (document.contactForm.asunto.value.length == 0) {
+        alert("Ingrese un asunto para su mensaje.")
+        document.contactForm.asunto.focus()
+        return 0;
+    }
+
+    if (document.contactForm.mensaje.value.length == 0) {
+        alert("Debe ingresar un mensaje para poder continuar.")
+        document.contactForm.mensaje.focus()
+        return 0;
+    }
+
+    alert("Tu mensaje ha sido enviado! Le estare respondiendo lo antes posible.");
+    document.validarFormulario.submit();
+}
