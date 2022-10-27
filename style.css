@@ -519,18 +519,32 @@ html {
 /* SECCION PORTFOLIO*/
 #portfolio {
     max-width: 1100px;
-    padding: 100px 0;
+    padding: 90px 0;
     margin: auto;
 }
 
-#portfolio .titulo-seccion {
+#portfolio .grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 3px;
+    justify-content: space-evenly;
+}
+#portfolio .grid-container .grid-item {
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+#portfolio .titulo-section {
     text-align: center;
     font-size: 22px;
     text-transform: uppercase;
-    color: #111135;
+    color: #161618;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
-    text-decoration-thickness: 5px;
+}
+#portfolio .sub-section{
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 #portfolio .fila {
@@ -749,6 +763,13 @@ footer a {
     }
 
     #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+
+    #portfolio .grid-container {
+        display: block;
+    }
+    #portfolio .grid-container .grid-item {
         margin: 10px auto;
     }
 
