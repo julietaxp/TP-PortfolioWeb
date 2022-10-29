@@ -210,7 +210,7 @@ html {
     cursor: pointer;
     box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, 0.69);
 }
- 
+
 #sobremi .sobremi a .download-cv:hover {
     background-color: #1bd6ab;
     color: #fff;
@@ -363,7 +363,7 @@ html {
 
 /* Estas clases se agregarán mediante javascript */
 
-    /*frontend*/
+/*frontend*/
 .skills .skill .html {
     width: 0%;
     animation: 2s html forwards;
@@ -439,7 +439,7 @@ html {
     }
 }
 
-   /*backend*/
+/*backend*/
 .skills .skill .phyton {
     width: 0%;
     animation: 2s phyton forwards;
@@ -529,9 +529,10 @@ html {
     gap: 3px;
     justify-content: space-evenly;
 }
+
 #portfolio .grid-container .grid-item {
-    padding: 20px; 
-    margin-bottom: 20px; 
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #portfolio .titulo-section {
@@ -542,7 +543,8 @@ html {
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
 }
-#portfolio .sub-section{
+
+#portfolio .sub-section {
     margin-top: 10px;
     padding-left: 20px;
 }
@@ -673,8 +675,11 @@ footer a {
 }
 
 
+
 /*RESPONSIVE*/
 
+/* Pantallas de menos de 800 píxeles 
+  (Ancho máximo hasta 800px)*/
 @media screen and (max-width:800px) {
     .redes {
         display: none;
@@ -711,7 +716,7 @@ footer a {
         font-size: 40px;
     }
 
-    /*seccion sore mi*/
+    /*seccion sobre mi*/
     #sobremi {
         padding: 50px 0;
         display: block;
@@ -769,9 +774,12 @@ footer a {
     #portfolio .grid-container {
         display: block;
     }
+
     #portfolio .grid-container .grid-item {
-        margin: 10px auto;
+        margin: auto;
     }
+
+
 
     /*seccion contacto*/
     #contacto {
@@ -786,5 +794,138 @@ footer a {
     #contacto .contenedor-form .mitad input {
         width: 100%;
         margin-bottom: 15px;
+    }
+}
+
+
+/* Pantallas de mas de 800 y menos de 992 píxeles */
+/*(Ancho como mínimo de 992px)*/
+@media only screen and (max-width:992px) {
+
+    /*seccion inicio*/
+    #inicio .contenido .presentacion h2 {
+        font-size: 50px;
+    }
+
+    #inicio .contenido .presentacion .descripcion {
+        font-size: 20px;
+    }
+
+    #sobremi {
+        padding: 60px 0;
+        display: block;
+    }
+
+
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #sobremi .contenedor-foto img {
+        padding: 10px;
+    }
+
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+
+    /*seccion servicios*/
+    #servicios {
+        padding: 50px 30px;
+    }
+
+    #servicios .fila {
+        display: flex;
+    }
+
+    #servicios .fila .servicio {
+        margin: 50px auto;
+    }
+
+    /*seccion skills*/
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+
+    /*seccion portfolio*/
+    #portfolio {
+        padding: 50px 0;
+    }
+
+    #portfolio .fila {
+        display: inline;
+    }
+
+    #portfolio .fila .proyecto {
+        margin: 10px auto;
+    }
+
+    #portfolio .grid-container {
+        display: inline;
+    }
+
+    #portfolio .grid-container .grid-item {
+        margin: auto;
+        align-items: center;
+    }
+
+
+    /*seccion contacto*/
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /*API*/
+    .api {
+        display: block;
+        justify-content: space-around;
+        align-items: center;
+        background-image: linear-gradient(to left, rgb(200, 234, 245) 10%, white, white);
+        padding: 0 40px;
+        border: 1px solid #919191;
+        border-radius: 20px;
+        margin-bottom: 15px;
+    }
+    .api h3 {
+        text-decoration-thickness: 5px;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #6e6e6e;
+    }
+    .api span {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        width: auto;
+        max-width: 100%;
+        font-size: 14px;
+        color: #6e6e6e;
+    }
+    .api select {
+        width: auto;
+        max-width: auto;
+        background-color: rgba(255, 255, 255, .5);
+        padding: 5px;
+        border: 1px solid #919191;
+        border-radius: 10px;
+        font-size: 14px;
+        color: #6e6e6e;
     }
 }

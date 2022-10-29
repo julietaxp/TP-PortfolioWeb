@@ -272,24 +272,15 @@
                     numquam, delectus dignissimos inventore!</p>
             </div>
             <div class="grid-item">
-                <iframe width="350" height="270" src="https://www.youtube.com/embed/2apVwq-pX9E"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+             <iframe width="350" height="270" src="https://www.youtube.com/embed/2apVwq-pX9E"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
         </div>
         <h4 class="sub-section">Otros proyectos</h4>
         <div class="fila">
             <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyectos/proyecto1.jpg" alt="">
-                <div class="info">
-                    <h4>Descripción del proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto2.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -297,18 +288,22 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
+                <img src="img/proyectos/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
                 <img src="img/proyectos/proyecto3.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
                     <p>Diseño Web</p>
                 </div>
             </div>
-
         </div>
         <div class="fila">
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto4.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -316,7 +311,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto5.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -324,7 +318,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto6.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -334,7 +327,6 @@
         </div>
         <div class="fila">
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto7.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -342,7 +334,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto8.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -350,7 +341,6 @@
                 </div>
             </div>
             <div class="proyecto">
-                <div class="overlay"></div>
                 <img src="img/proyectos/proyecto9.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del proyecto</h4>
@@ -361,40 +351,72 @@
         </div>
     </section>
 
-    <!--SECCION CONTACTO-->
-    <section id="contacto">
-        <h3 class="titulo-seccion">Contactame</h3>
+<!--SECCION CONTACTO-->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contactame</h3>
 
-        <div class="contenedor-form">
-            <form action="" name="contactForm">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad" name="nombreCompleto">
-                    <input type="email" placeholder="Direccion de email" class="input-mitad" name="email">
-                </div>
-                <div class="fila">
-                    <input type="text" placeholder="Tema.." class="input-full" name="asunto">
-                </div>
-                <div class="fila">
-                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje.."
-                        class="input-full"></textarea>
-                </div>
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar" name="btnSubmit"
-                    onclick="validarFormulario()">
-            </form>
-        </div>
-    </section>
+    <div class="contenedor-form">
+        <form action="" name="contactForm">
+            <div class="fila mitad">
+                <input type="text" placeholder="Nombre Completo" class="input-mitad" name="nombreCompleto">
+                <input type="email" placeholder="Direccion de email" class="input-mitad" name="email">
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Tema.." class="input-full" name="asunto">
+            </div>
+            <div class="fila">
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje.."
+                    class="input-full"></textarea>
+            </div>
+            <div class="api">
+                <!--Imagen de bandera (opcional)-->
+                <span>
+                    <h3>¿Estás en Argentina?</h3>
+                </span>
 
-    <!--FOOTER-->
-    <footer>
-        <p>2022</p>
-        <div class="redes">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+
+                <span>
+                    <!--Elección de Provincia-->
+                    <label>Provincia:</label>
+                    <select id="selectProvincias">
+                        <option value="Elige una provincia">Elige una provincia</option>
+                    </select>
+                    <span></span>
+
+                    <!--Elección de Municipio-->
+                    <label>Municipio:</label>
+                    <select id="selectMunicipio">
+                        <option value="Elige un Municipio">Elige un municipio</option>
+                    </select>
+                    <span></span>
+
+                    <!--Elección de Localidad-->
+                    <label>Localidad:</label>
+                    <select id="selectLocalidad">
+                        <option value="Elige una localidad">Elige una localidad</option>
+                    </select>
+                </span>
+                <span></span>
+            </div>
+
+            <script src="script.js"></script>
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar" name="btnSubmit"
+                onclick="validarFormulario()">
+        </form>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <p>2022</p>
+    <div class="redes">
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</footer>
+<script src="script.js"></script>
 </body>
 
 </html>
