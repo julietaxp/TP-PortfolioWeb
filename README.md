@@ -28,7 +28,7 @@ Se trata de un sitio web estilo One Page, que cuenta con 5 secciones.
 To deploy this project run
 
 ```bash
-  npm run deploy
+  https://jas-tp.netlify.app/
 ```
 
 
