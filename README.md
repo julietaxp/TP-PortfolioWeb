@@ -5,6 +5,7 @@ Este proyecto se realizó en el marco del programa Codo a Codo, para el curso de
 
 Se trata de un sitio web estilo One Page, que cuenta con 5 secciones.
 
+https://jas-tp.netlify.app/
 
 ## Features
 
@@ -23,13 +24,6 @@ Se trata de un sitio web estilo One Page, que cuenta con 5 secciones.
 | Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
 
 
-## Deployment
-
-To deploy this project run
-
-```bash
-  https://jas-tp.netlify.app/
-```
 
 
 ## Authors
