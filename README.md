@@ -34,5 +34,5 @@ To deploy this project run
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@julietaxp](https://www.github.com/julietaxp)
 
