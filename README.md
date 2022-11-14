@@ -9,10 +9,10 @@ https://jas-tp.netlify.app/
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- 
+- 
+- 
+- 
 
 ## Color Reference
 
@@ -25,8 +25,4 @@ https://jas-tp.netlify.app/
 
 
 
-
-## Authors
-
-- [@julietaxp](https://www.github.com/julietaxp)
 
